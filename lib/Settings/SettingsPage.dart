@@ -7,13 +7,30 @@ class SettingsRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text('Settings'),
       ),
-      body: Center(
-        child: RaisedButton(
-          child: Text('Open route'),
-          onPressed: () {
-          },
-        ),
+      body: ListView(
+        padding: const EdgeInsets.all(8),
+        children: <Widget>[
+          ListTile(
+            title: Text("temp"),
+          ),
+          Container(
+            height: 50,
+            color: Colors.amber[600],
+            child: const Center(child: Text('Entry A')),
+          ),
+          Container(
+            height: 50,
+            color: Colors.amber[500],
+            child: const Center(child: Text('Entry B')),
+          ),
+          Container(
+            height: 50,
+            color: Colors.amber[100],
+            child: const Center(child: Text('Entry C')),
+          ),
+        ],
       ),
     );
   }
+
 }
