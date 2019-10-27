@@ -70,7 +70,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
     return new Theme(
       data: new ThemeData(
         brightness: Brightness.light,
-        primaryColor: const Color.fromRGBO(106, 94, 175, 1.0),
+        primaryColor: Colors.green,
         platform: Theme
             .of(context)
             .platform,
@@ -78,7 +78,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
       child: new Container(
         width: width.value,
         height: heigth.value,
-        color: const Color.fromRGBO(106, 94, 175, 1.0),
+        color: Colors.white,
         child: new Hero(
           tag: "img",
           child: new Card(
@@ -207,7 +207,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                       width: 600.0,
                       height: 80.0,
                       decoration: new BoxDecoration(
-                        color: new Color.fromRGBO(121, 114, 173, 1.0),
+                        color: Colors.cyan,
                       ),
                       alignment: Alignment.center,
                       child: new Row(
@@ -221,11 +221,11 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                 width: 130.0,
                                 alignment: Alignment.center,
                                 decoration: new BoxDecoration(
-                                  color: Colors.red,
+                                  color: Colors.redAccent,
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
                                 child: new Text(
-                                  "DON'Ttt",
+                                  "Pass",
                                   style: new TextStyle(color: Colors.white),
                                 ),
                               )),
@@ -237,11 +237,11 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                 width: 130.0,
                                 alignment: Alignment.center,
                                 decoration: new BoxDecoration(
-                                  color: Colors.cyan,
+                                  color: Colors.greenAccent,
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
                                 child: new Text(
-                                  "I'M INNNN",
+                                  "Match",
                                   style: new TextStyle(color: Colors.white),
                                 ),
                               ))

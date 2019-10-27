@@ -129,13 +129,13 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
     return (new Scaffold(
         appBar: new AppBar(
           elevation: 0.0,
-          backgroundColor: new Color.fromRGBO(106, 94, 175, 1.0),
+          backgroundColor: Colors.cyan,
           centerTitle: true,
           leading: new Container(
             margin: const EdgeInsets.all(15.0),
             child: new Icon(
               Icons.equalizer,
-              color: Colors.cyan,
+              color: Colors.white,
               size: 30.0,
             ),
           ),
@@ -151,7 +151,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                   margin: const EdgeInsets.all(15.0),
                   child: new Icon(
                     Icons.search,
-                    color: Colors.cyan,
+                    color: Colors.white,
                     size: 30.0,
                   )),
             ),
@@ -182,7 +182,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           ),
         ),
         body: new Container(
-          color: new Color.fromRGBO(106, 94, 175, 1.0),
+          color: Colors.white,
           alignment: Alignment.center,
           child: dataLength > 0
               ? new Stack(
@@ -211,8 +211,8 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                           backCardWidth, 0.0, 0.0, context);
                     }
                   }).toList())
-              : new Text("No Event Left",
-                  style: new TextStyle(color: Colors.white, fontSize: 50.0)),
+              : new Text("No Homis Left",
+                  style: new TextStyle(color: Colors.cyan, fontSize: 50.0)),
         )));
   }
 }

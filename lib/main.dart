@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'Homi',
       // showPerformanceOverlay: true,
       theme: new ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.lime,
       ),
       // home: new PageMain(),
       home: new CardDemo(),
