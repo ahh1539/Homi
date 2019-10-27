@@ -5,7 +5,9 @@ import 'package:flutter/scheduler.dart';
 
 class DetailPage extends StatefulWidget {
   final DecorationImage type;
+
   const DetailPage({Key key, this.type}) : super(key: key);
+
   @override
   _DetailPageState createState() => new _DetailPageState(type: type);
 }
@@ -17,7 +19,9 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
   Animation<double> width;
   Animation<double> heigth;
   DecorationImage type;
+
   _DetailPageState({this.type});
+
   List data = imageData;
   double _appBarHeight = 256.0;
   AppBarBehavior _appBarBehavior = AppBarBehavior.pinned;
@@ -67,7 +71,9 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
       data: new ThemeData(
         brightness: Brightness.light,
         primaryColor: const Color.fromRGBO(106, 94, 175, 1.0),
-        platform: Theme.of(context).platform,
+        platform: Theme
+            .of(context)
+            .platform,
       ),
       child: new Container(
         width: width.value,
@@ -110,7 +116,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                             _appBarBehavior == AppBarBehavior.snapping,
                         snap: _appBarBehavior == AppBarBehavior.snapping,
                         flexibleSpace: new FlexibleSpaceBar(
-                          title: new Text("Party"),
+                          title: new Text("Alex"),
                           background: new Stack(
                             fit: StackFit.expand,
                             children: <Widget>[
@@ -144,7 +150,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                                 color: Colors.black12))),
                                     child: new Row(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                      MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
                                         new Row(
                                           children: <Widget>[
@@ -154,7 +160,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                             ),
                                             new Padding(
                                               padding:
-                                                  const EdgeInsets.all(8.0),
+                                              const EdgeInsets.all(8.0),
                                               child: new Text("10:00  AM"),
                                             )
                                           ],
@@ -167,7 +173,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                             ),
                                             new Padding(
                                               padding:
-                                                  const EdgeInsets.all(8.0),
+                                              const EdgeInsets.all(8.0),
                                               child: new Text("15 MILES"),
                                             )
                                           ],
@@ -185,56 +191,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                     ),
                                   ),
                                   new Text(
-                                      "It's party, party, party like a nigga just got out of jail Flyin' in my 'Rari like a bat that just flew outta hell I'm from the east of ATL, but ballin' in the Cali hills Lil mama booty boomin', that bitch movin' and she standin' still I know these bitches choosin' me, but I got 80 on me still. host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion. A party will typically feature food and beverages, and often music and dancing or other forms of entertainment.  "),
-                                  new Container(
-                                    margin: new EdgeInsets.only(top: 25.0),
-                                    padding: new EdgeInsets.only(
-                                        top: 5.0, bottom: 10.0),
-                                    height: 120.0,
-                                    decoration: new BoxDecoration(
-                                        color: Colors.white,
-                                        border: new Border(
-                                            top: new BorderSide(
-                                                color: Colors.black12))),
-                                    child: new Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        new Text(
-                                          "ATTENDEES",
-                                          style: new TextStyle(
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                        new Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: <Widget>[
-                                            new CircleAvatar(
-                                                backgroundImage: avatar1),
-                                            new CircleAvatar(
-                                              backgroundImage: avatar2,
-                                            ),
-                                            new CircleAvatar(
-                                              backgroundImage: avatar3,
-                                            ),
-                                            new CircleAvatar(
-                                              backgroundImage: avatar4,
-                                            ),
-                                            new CircleAvatar(
-                                              backgroundImage: avatar5,
-                                            ),
-                                            new CircleAvatar(
-                                              backgroundImage: avatar6,
-                                            )
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ),
+                                      "Sup Homi. I just got a job offer in Rochester and I am looking for someone cool to stay with. Never been to Rochester but I hear its a dope place. My ideal roomate would be someone organized (we aint living in a trailer park) but that is also down to have fun. If you are someone that likes to have fun then I am your homi."),
                                   new Container(
                                     height: 100.0,
                                   )

@@ -57,9 +57,10 @@ Positioned cardDemoDummy(
                             color: Colors.red,
                             borderRadius: new BorderRadius.circular(60.0),
                           ),
-                          child: new Text(
-                            "DON'T dummy card",
-                            style: new TextStyle(color: Colors.white),
+                          child: new Icon(
+                            Icons.clear,
+                            color: Colors.white,
+                            size: 40.0,
                           ),
                         )),
                     new FlatButton(
@@ -70,12 +71,13 @@ Positioned cardDemoDummy(
                           width: 130.0,
                           alignment: Alignment.center,
                           decoration: new BoxDecoration(
-                            color: Colors.cyan,
+                            color: Colors.green,
                             borderRadius: new BorderRadius.circular(60.0),
                           ),
-                          child: new Text(
-                            "I'M dummy card",
-                            style: new TextStyle(color: Colors.white),
+                          child: new Icon(
+                            Icons.check,
+                            color: Colors.white,
+                            size: 40.0,
                           ),
                         ))
                   ],
