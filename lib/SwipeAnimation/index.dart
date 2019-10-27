@@ -3,7 +3,9 @@ import 'package:animation_exp/SwipeAnimation/data.dart';
 import 'package:animation_exp/SwipeAnimation/dummyCard.dart';
 import 'package:animation_exp/SwipeAnimation/activeCard.dart';
 
+import 'package:animation_exp/Chat/chat.dart';
 //import 'package:animation_exp/PageReveal/page_main.dart';
+import 'package:animation_exp/Settings/SettingsPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 
@@ -41,7 +43,8 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
       setState(() {
         if (rotate.isCompleted) {
           var i = data.removeLast();
-          data.insert(0, i);
+          // TODO: THIS LINE ADDS THE CARD TO THE BACK OF THE STACK
+//          data.insert(0, i);
 
           _buttonController.reset();
         }
@@ -133,10 +136,16 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           centerTitle: true,
           leading: new Container(
             margin: const EdgeInsets.all(15.0),
-            child: new Icon(
-              Icons.equalizer,
-              color: Colors.white,
-              size: 30.0,
+            child: new IconButton(
+              icon: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(new PageRouteBuilder(
+                  pageBuilder: (_, __, ___) => new SettingsRoute(),
+                ));
+              },
             ),
           ),
           actions: <Widget>[
@@ -149,10 +158,16 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
               },
               child: new Container(
                   margin: const EdgeInsets.all(15.0),
-                  child: new Icon(
-                    Icons.search,
-                    color: Colors.white,
-                    size: 30.0,
+                  child: new IconButton(
+                    icon: Icon(
+                      Icons.message,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(new PageRouteBuilder(
+                        pageBuilder: (_, __, ___) => new HomeScreen(),
+                      ));
+                    },
                   )),
             ),
           ],
@@ -160,7 +175,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Text(
-                "EVENTS",
+                "Swipes Remaining",
                 style: new TextStyle(
                     fontSize: 12.0,
                     letterSpacing: 3.5,

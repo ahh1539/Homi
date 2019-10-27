@@ -224,9 +224,10 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                   color: Colors.redAccent,
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
-                                child: new Text(
-                                  "Pass",
-                                  style: new TextStyle(color: Colors.white),
+                                child: new Icon(
+                                  Icons.clear,
+                                  size: 40.0,
+                                  color: Colors.white,
                                 ),
                               )),
                           new FlatButton(
@@ -237,12 +238,13 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                 width: 130.0,
                                 alignment: Alignment.center,
                                 decoration: new BoxDecoration(
-                                  color: Colors.greenAccent,
+                                  color: Colors.green,
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
-                                child: new Text(
-                                  "Match",
-                                  style: new TextStyle(color: Colors.white),
+                                child: new Icon(
+                                  Icons.check,
+                                  size: 40.0,
+                                  color: Colors.white,
                                 ),
                               ))
                         ],
