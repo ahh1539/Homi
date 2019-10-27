@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('fluttermaster.com - Message Chat'),
+        title: Text('Direct Messages'),
       ),
       body: Container(
         child: ListView.builder(
