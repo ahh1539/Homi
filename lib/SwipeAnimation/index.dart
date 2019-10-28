@@ -174,13 +174,13 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           title: new Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new Text(
-                "Swipes Remaining",
-                style: new TextStyle(
-                    fontSize: 12.0,
-                    letterSpacing: 3.5,
-                    fontWeight: FontWeight.bold),
-              ),
+          new Text(
+          "Swipes Remaining",
+            style: new TextStyle(
+                fontSize: 12.0,
+                letterSpacing: 3.5,
+                fontWeight: FontWeight.bold),
+          ),
               new Container(
                 width: 15.0,
                 height: 15.0,

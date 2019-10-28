@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:animation_exp/Settings/SettingsPage.dart';
 import 'package:animation_exp/SwipeAnimation/detail.dart';
 import 'package:flutter/material.dart';
 
