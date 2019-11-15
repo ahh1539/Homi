@@ -74,16 +74,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           color: Colors.white,
           child: Padding(
-            padding: const EdgeInsets.all(36.0),
+            padding: const EdgeInsets.fromLTRB(20.0, 0, 20, 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 SizedBox(
-                  height: 155.0,
+                  height: 200.0,
                   child: Image.asset(
-                    "assets/pedro.jpg",
-                    fit: BoxFit.contain,
+                    "assets/homi.jpg",
+                    fit: BoxFit.cover,
                   ),
                 ),
                 SizedBox(height: 45.0),

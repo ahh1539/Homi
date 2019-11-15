@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:preferences/dropdown_preference.dart';
+import 'package:preferences/preference_page.dart';
+import 'package:preferences/preference_title.dart';
+import 'package:preferences/radio_preference.dart';
 
 class Preferences extends StatelessWidget {
   @override
@@ -10,7 +14,29 @@ class Preferences extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: <Widget>[
-          Container(
+
+      DropdownPreference(
+        'Start Page',
+        'start_page',
+        defaultVal: 'Matching',
+        values: ['Matching', 'Timeline', 'Private Messages'],
+      ),
+      PreferenceTitle('Personalization'),
+      RadioPreference(
+        'Light Theme',
+        'light',
+        'ui_theme',
+        isDefault: true,
+
+      ),
+      RadioPreference(
+        'Dark Theme',
+        'dark',
+        'ui_theme',
+
+      ),
+
+      Container(
             height: 60,
             child: const Center(
                 child: Text(

@@ -136,39 +136,23 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           centerTitle: true,
           leading: new Container(
             margin: const EdgeInsets.all(15.0),
-            child: new IconButton(
-              icon: Icon(
-                Icons.settings,
-                color: Colors.white,
-              ),
-              onPressed: () {
+            child: new GestureDetector(
+              onTap: () {
                 Navigator.of(context).push(new PageRouteBuilder(
-                  pageBuilder: (_, __, ___) => new SettingsRoute(),
-                ));
-              },
-            ),
+                  pageBuilder: (_, __, ___) => new SettingsRoute()
+                ));},
+              child: new Icon(Icons.settings, color: Colors.white),
+        )
+
           ),
           actions: <Widget>[
-            new GestureDetector(
-              onTap: () {
-                // Navigator.push(
-                //     context,
-                //     new MaterialPageRoute(
-                //         builder: (context) => new PageMain()));
-              },
-              child: new Container(
-                  margin: const EdgeInsets.all(15.0),
-                  child: new IconButton(
-                    icon: Icon(
-                      Icons.message,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      Navigator.of(context).push(new PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => new HomeScreen(),
-                      ));
-                    },
-                  )),
+        new GestureDetector(
+        onTap: () {
+    Navigator.of(context).push(new PageRouteBuilder(
+    pageBuilder: (_, __, ___) => new HomeScreen()
+    ));},
+      child: new Icon(Icons.message, color: Colors.white),
+
             ),
           ],
           title: new Row(
@@ -177,7 +161,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
           new Text(
           "Swipes Remaining",
             style: new TextStyle(
-                fontSize: 12.0,
+                fontSize:18.0,
                 letterSpacing: 3.5,
                 fontWeight: FontWeight.bold),
           ),
@@ -188,7 +172,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                 alignment: Alignment.center,
                 child: new Text(
                   dataLength.toString(),
-                  style: new TextStyle(fontSize: 10.0),
+                  style: new TextStyle(fontSize: 15.0),
                 ),
                 decoration: new BoxDecoration(
                     color: Colors.red, shape: BoxShape.circle),

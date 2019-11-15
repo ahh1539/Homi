@@ -14,10 +14,8 @@ class HideMyProfile extends StatelessWidget {
         trailing: Switch(
           value: isSwitched,
           onChanged: (value) {
-            isSwitched = value;
+            isSwitched = !isSwitched;
           },
-          activeTrackColor: Colors.lightGreenAccent,
-          activeColor: Colors.green,
         ),
       )
     );
