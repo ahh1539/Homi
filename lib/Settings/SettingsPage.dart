@@ -1,4 +1,3 @@
-import 'package:animation_exp/Chat/chat.dart';
 import 'package:animation_exp/Settings/DeleteAccount.dart';
 import 'package:animation_exp/Settings/HideMyProfile.dart';
 import 'package:animation_exp/Settings/MyProfile.dart';
