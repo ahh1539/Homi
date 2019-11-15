@@ -1,5 +1,6 @@
 import 'package:animation_exp/Chat/message_page.dart';
 import 'package:animation_exp/Settings/SettingsPage.dart';
+import 'package:animation_exp/login/LoginPage.dart';
 import 'package:flutter/material.dart';
 import './chat_model.dart';
 
@@ -39,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ListTile(
                   onTap: (){
                     Navigator.of(context).push(new PageRouteBuilder(
-                      pageBuilder: (_, __, ___) => new ChatScreen(),
+                      pageBuilder: (_, __, ___) => ChatScreen(),
                     ));
                   },
                   leading: CircleAvatar(

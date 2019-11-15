@@ -1,5 +1,6 @@
 import 'package:animation_exp/SwipeAnimation/index.dart';
 import 'package:flutter/material.dart';
+import 'login/LoginPage.dart';
 
 void main() => runApp(new MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
       // home: new PageMain(),
-      home: new CardDemo(),
+      home: new LoginPage(),
       //home: BottomNavigationDemo(),
       // home:new exp(),
     );
