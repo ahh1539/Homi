@@ -74,6 +74,7 @@ Positioned cardDemo(
                     borderRadius: new BorderRadius.circular(8.0),
                   ),
                   child: new Column(
+
                     children: <Widget>[
                       new Container(
                         alignment: Alignment.bottomLeft,
