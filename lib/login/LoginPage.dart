@@ -10,7 +10,7 @@ class LoginPage extends StatelessWidget {
       title: 'Flutter login UI',
       theme: ThemeData(
 
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.cyan,
       ),
       home: MyHomePage(title: 'Flutter Login'),
     );

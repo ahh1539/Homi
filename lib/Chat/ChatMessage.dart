@@ -11,12 +11,8 @@ class ChatMessage extends StatelessWidget {
     return new Container(
       margin: const EdgeInsets.symmetric(vertical: 10.0),
       child: new Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          new Container(
-            margin: const EdgeInsets.only(right: 16.0),
-            child: new CircleAvatar(child: new Text(_name[0])),
-          ),
           new Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -26,6 +22,10 @@ class ChatMessage extends StatelessWidget {
                 child: new Text(text),
               ),
             ],
+          ),
+          new Container(
+            margin: const EdgeInsets.only(left: 16.0),
+            child: new CircleAvatar(child: new Text(_name[0])),
           ),
         ],
       ),

@@ -1,29 +1,45 @@
 import 'package:flutter/material.dart';
 
 class HideMyProfile extends StatelessWidget {
+  bool isSwitched = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Settings > Hide My Profile'),
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(20),
-        children: <Widget>[
-          Container(
-            height: 60,
-            child: const Center(
-                child: Text(
-                  'Hide Profile',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                )),
-            margin: const EdgeInsets.all(5.0),
-            decoration: new BoxDecoration(
-                color: Colors.redAccent,
-                borderRadius: new BorderRadius.all(Radius.circular(20.0))),
-          ),
-        ],
-      ),
+      body: ListTile(
+        title: Text("Hide Profile"),
+        subtitle: Text("This will make your profile hidden"),
+        trailing: Switch(
+          value: isSwitched,
+          onChanged: (value) {
+            isSwitched = value;
+          },
+          activeTrackColor: Colors.lightGreenAccent,
+          activeColor: Colors.green,
+        ),
+      )
     );
   }
 }
+
+showAlertDialog(BuildContext context) {
+
+  // set up the AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: Text("AlertDialog"),
+    content: Text("Your profile is now hidden, you can come back and activate "
+        "it at any time. Click outside of this box to "),
+  );
+
+  // show the dialog
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
+}
+
+
