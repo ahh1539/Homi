@@ -43,7 +43,6 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
       setState(() {
         if (rotate.isCompleted) {
           var i = data.removeLast();
-          // TODO: THIS LINE ADDS THE CARD TO THE BACK OF THE STACK
 //          data.insert(0, i);
 
           _buttonController.reset();

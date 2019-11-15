@@ -76,6 +76,8 @@ Positioned cardDemo(
                   child: new Column(
                     children: <Widget>[
                       new Container(
+                        alignment: Alignment.bottomLeft,
+                        padding: new EdgeInsets.only(left: 14.0, bottom: 8.0, right: 10.0),
                         width: screenSize.width / 1.2 + cardWidth,
                         height: screenSize.height / 2.2,
                         decoration: new BoxDecoration(
@@ -84,6 +86,24 @@ Positioned cardDemo(
                               topRight: new Radius.circular(8.0)),
                           image: img,
                         ),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            new Text('Alex | 20',
+                                style: new TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 29.0,
+                                )
+                            ),
+                            new Icon(
+                              Icons.info,
+                              color: Colors.white,
+                              size: 30.0,
+                            )
+                          ],
+                        )
+
                       ),
                       new Container(
                           width: screenSize.width / 1.2 + cardWidth,
