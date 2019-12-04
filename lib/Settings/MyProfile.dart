@@ -10,6 +10,7 @@ import 'package:preferences/text_field_preference.dart';
 class MyProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    PrefService.init();
     return Scaffold(
       appBar: AppBar(
         title: Text('Settings > My Profile'),
@@ -77,4 +78,8 @@ class MyProfile extends StatelessWidget {
       ),
     );
   }
+}
+
+rando(BuildContext context){
+  PrefService.init();
 }

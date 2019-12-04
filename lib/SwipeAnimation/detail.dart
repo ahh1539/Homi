@@ -106,8 +106,8 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                           },
                           icon: new Icon(
                             Icons.arrow_back,
-                            color: Colors.cyan,
-                            size: 30.0,
+                            color: Colors.white,
+                            size: 43.0,
                           ),
                         ),
                         expandedHeight: _appBarHeight,
